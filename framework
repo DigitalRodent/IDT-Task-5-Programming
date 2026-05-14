@@ -1,0 +1,70 @@
+🧮 Activity 1: Basic Calculator (Student Instructions)
+📌 What you are building
+You are creating a simple calculator program that:
+asks the user for two numbers
+performs basic maths calculations
+displays the results clearly
+This activity helps you practise:
+variables
+user input
+number data types
+mathematical operators
+output
+
+Step 1: Create variables to store numbers
+Create two variables.
+num1
+num2
+Each variable will store one number entered by the user.
+Variables are used so the program can remember the values and use them later in calculations.
+Set the initial value of each variable to 0
+👉 Why this matters:
+Programs cannot perform calculations unless the values are stored somewhere in memory.
+
+Step 2: Ask the user for the numbers
+Use the input function to ask the user to enter each number.
+The message shown to the user should clearly explain what they are doing and what they need to type (for example, “This program is for calculating two numbers supplied by the user” and then “Enter the first number”).
+👉 Why this matters:
+input() allows the program to interact with the user and receive data while the program is running.
+
+Step 3: Convert the input to numbers
+Convert each user input into a floating-point number.
+A floating-point number can store whole numbers and decimals.
+👉 Why this matters:
+The input() function always returns text (a string).
+Maths operations cannot be performed on text.
+Using float allows the user to enter values like 2.5, not just whole numbers.
+You can nest the float function around the input function float(input())
+
+Step 4: Perform the calculations
+Use mathematical operators to calculate:
+addition
+subtraction
+multiplication
+division
+Each calculation should use the two numbers entered by the user.
+👉 Why this matters:
+Operators tell Python what type of maths to perform.
+
+Step 5: Display the results
+Use the output function to show the result of each calculation.
+Each result should clearly show:
+the numbers used
+the operation performed
+the final answer
+👉 Why this matters:
+Clear output makes programs easier to understand and use.
+
+Step 6: Handle division safely (extension)
+Check that the second number is not zero before dividing.
+If it is zero, display a message instead of attempting the calculation.
+👉 Why this matters:
+Dividing by zero causes an error and can crash the program.
+
+✔ Success criteria
+Your program is complete when it:
+asks the user for two numbers
+converts the input into numbers
+performs all four maths operations
+displays clear results
+does not crash if division by zero occurs
