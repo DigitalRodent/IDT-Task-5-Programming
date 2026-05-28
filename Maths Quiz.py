@@ -70,6 +70,7 @@ def play_quiz():
     print()
     print("Welcome", student_name)
     print("You will be asked 10 maths questions.")
+    print("Round to 2 decimal places.")
     print("Enter x at any time to exit the quiz early.")
     print()
 
@@ -106,7 +107,7 @@ def play_quiz():
     save_score_to_file(student_name, score)
 
     input("Press Enter to return to the main menu.")
-    print()
+    return
 
 
 def view_today_high_scores():
@@ -158,9 +159,11 @@ def main():
 
         elif choice == "B":
             view_today_high_scores()
+            input("Press Enter to return to the main menu.")
 
         elif choice == "C":
             view_past_high_scores()
+            input("Press Enter to return to the main menu.")
 
         elif choice == "D":
             print("Thank you for playing Maths Quiz.")
@@ -168,7 +171,8 @@ def main():
 
         else:
             print("Invalid option. Please enter A, B, C or D.")
-            print()
+            input("Press Enter to return to the main menu.")
 
 
-main()
+if __name__ == "__main__":
+    main()
